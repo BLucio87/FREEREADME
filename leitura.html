@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leitura</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Leitura do Quadrinho</h1>
+  <iframe id="pdf-viewer" src="" width="100%" height="600px"></iframe>
+  
+  <div class="navegacao">
+    <button onclick="voltarQuadrinho()">⬅ Voltar para página do quadrinho</button>
+    <button onclick="voltarPrincipal()">🏠 Voltar para página principal</button>
+  </div>
+
+  <script>
+    // Captura o parâmetro da URL (file=...)
+    const params = new URLSearchParams(window.location.search);
+    const file = params.get("file");
+    if(file) {
+      document.getElementById("pdf-viewer").src = file + "#toolbar=0";
+    }
+
+    function voltarQuadrinho() {
+      window.history.back();
+    }
+
+    function voltarPrincipal() {
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
