@@ -95,7 +95,7 @@ button:hover {
     z-index: -1;
 }
 
-.marca-dagua2 {
+.marca-dagua-2 {
     background-image: url('gojo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -108,6 +108,7 @@ button:hover {
     height: 100%;
     z-index: -1;
 }
+
 
 
 
