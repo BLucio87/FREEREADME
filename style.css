@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 20px;
   background-color: black;
-  color: #333;
+  color: white;
 }
 
 h1 {
@@ -80,4 +80,5 @@ button:hover {
   font-weight: bold;
   font-size: 18px;
 }
+
 
